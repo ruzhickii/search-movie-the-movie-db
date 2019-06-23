@@ -11,8 +11,8 @@ img {
     font-weight: 900;
 }
 
-.jumb {
-    border-radius: 100px 5px 85px 5px;
+.wrapper-search {
+    border-radius: 100px 5px 85px 5px !important;
 }
 
 .img_poster {
@@ -82,7 +82,7 @@ img {
 }
 
 .made-by-author {
-    font-size: 32px;
+    font-size: 26px;
     color: lime;
 }
 

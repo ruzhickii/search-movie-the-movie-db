@@ -83,6 +83,11 @@ img {
 
 .made-by-author {
     font-size: 32px;
+    color: lime;
+}
+
+.made-by-author:hover {
+    text-decoration: none;
 }
 
 .description {

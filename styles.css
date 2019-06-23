@@ -1,6 +1,14 @@
 
+body {
+    background: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg") repeat-y #fc0 local center ;
+}
+
 img {
     max-width: 100%;
+}
+
+.nav {
+    font-weight: 900;
 }
 
 .img_poster {
@@ -31,4 +39,27 @@ img {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.movies-wrapper {
+    background-color: #e9ecef;
+    border-radius: 35px;
+}
+
+.rating {
+    background: cadetblue;
+    color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.made-by {
+    max-width: 350px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.made-by-author {
+    font-size: 32px;
 }

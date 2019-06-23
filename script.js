@@ -95,13 +95,14 @@ function showFullInfo() {
             console.log('output: ', output);
             movie.innerHTML = `
                 <h4 class = 'col-12 text-center text-info'>${output.name || output.title}</h4>
-                <div class = 'col-4'>
+                <div class = 'col-4 text-center'>
                     <img class = 'img_poster' src = '${urlPoster + output.poster_path}' alt = '${output.name}'>
                     ${(output.homepage) ? `<p class = 'text-center'><a href = '${output.homepage}' target = '_blank'>Официальная страница</a></p>` : ''}
                     ${(output.homepage) ? `<p class = 'text-center'><a href='https://imdb.com/title/${output.imdb_id}'  target = '_blank'>Страница на IMDB.com</a></p>` : ''}
+                    <p>Рейтинг: <span class = 'rating'>${output.popularity}</span></p>
                 </div>
                 <div class = 'col-8'>
-                
+                    
                 </div>
             `;
         })

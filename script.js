@@ -97,11 +97,18 @@ function showFullInfo() {
                 <h4 class = 'col-12 text-center text-info'>${output.name || output.title}</h4>
                 <div class = 'col-4 text-center'>
                     <img class = 'img_poster' src = '${urlPoster + output.poster_path}' alt = '${output.name}'>
-                    ${(output.homepage) ? `<p class = 'text-center'><a href = '${output.homepage}' target = '_blank'>Официальная страница</a></p>` : ''}
-                    ${(output.homepage) ? `<p class = 'text-center'><a href='https://imdb.com/title/${output.imdb_id}'  target = '_blank'>Страница на IMDB.com</a></p>` : ''}
-                    <p>Рейтинг: <span class = 'rating'>${output.popularity}</span></p>
+                    ${(output.homepage) ? `<p class = 'text-center movies-wrapper-links'><a class="movies-links" href = '${output.homepage}' target = '_blank'>Официальная страница</a></p>` : ''}
+                    ${(output.homepage) ? `<p class = 'text-center movies-wrapper-links'><a class="movies-links" href='https://imdb.com/title/${output.imdb_id}'  target = '_blank'>Страница на IMDB.com</a></p>` : ''}
+                    <p class="description">Популярность : <span class = 'rating'>${output.popularity}</span></p>
                 </div>
-                <div class = 'col-8'>
+                <div class = 'col-8'>              
+                    <p class="description">Оригинальное название : <span class="description-values">${output.original_title || output.original_name}</span></p>                                          
+                    <p class="description">Дата релиза : <span class="description-values">${output.release_date || output.last_episode_to_air.air_date}</span> </p>                                
+                    <p class="description">Рейтинг : <span class="description-values">${output.vote_average}</span></p>                                                                                
+                    <p class="description">Проголосовало : <span class="description-values">${output.vote_count}</span></p>                                                                                
+                    <p class="description">Оригинальное язык : <span class="description-values">${output.original_language}</span></p>                                                      
+                    <p class="description">Продолжительность : <span class="description-values">${(output.runtime) ? output.runtime : 'no info'}</span></p>           
+                    <p class="description">${output.overview}</p>
                     
                 </div>
             `;

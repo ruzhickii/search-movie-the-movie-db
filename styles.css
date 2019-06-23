@@ -11,6 +11,10 @@ img {
     font-weight: 900;
 }
 
+.jumb {
+    border-radius: 100px 5px 85px 5px;
+}
+
 .img_poster {
     height: 360px;
     border-radius: 10px;
@@ -46,6 +50,23 @@ img {
     border-radius: 35px;
 }
 
+.movies-wrapper-links {
+    background: cadetblue;
+    max-width: 240px;
+    margin: 5px auto;
+    border-radius: 5px;
+}
+
+.movies-links {
+    color: #b8c3c3;
+    cursor: pointer;
+}
+
+.movies-links:hover {
+    text-decoration: none;
+    color: gold;
+}
+
 .rating {
     background: cadetblue;
     color: #fff;
@@ -62,4 +83,12 @@ img {
 
 .made-by-author {
     font-size: 32px;
+}
+
+.description {
+    font-weight: 700;
+}
+
+.description-values {
+    color: #004cff;
 }
